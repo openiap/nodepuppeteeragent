@@ -8,6 +8,10 @@
     "updateapidev": "npm uninstall @openiap/nodeapi && npm i openiap/nodeapi",
     "updateapi": "npm uninstall @openiap/nodeapi && npm i @openiap/nodeapi"
   },
+  "openiap": {
+    "daemon": true,
+    "chromium": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openiap/nodepuppeteeragent.git"
