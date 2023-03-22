@@ -41,6 +41,10 @@ async function ProcessWorkitem(workitem) {
         if (workitem.payload) {
             url = workitem.payload.url;
         }
+      } else {
+        if (workitem.payload) {
+            workitem.payload.url = "https://developer.chrome.com/";
+        }
       }
       if(url != null && url != "") {
         console.log("goto page:", url)
@@ -112,6 +116,7 @@ async function ProcessWorkitemWrapper(workitem) {
 async function onConnected(client) {
     var queue = process.env.queue;
     var wiq = process.env.wiq;
+    if(wiq == null || wiq == "") wiq = "nodepuppeteertest"
     if(queue == null || queue == "") queue = wiq;
     const queuename = await client.RegisterQueue({queuename: queue}, async (message)=> {
         try {
@@ -136,6 +141,7 @@ async function onConnected(client) {
 async function main() {
     var wiq = process.env.wiq;
     var queue = process.env.queue;
+    if(wiq == null || wiq == "") wiq = "nodepuppeteertest"
     if(wiq == null || wiq == "") throw new Error("wiq environment variable is mandatory")
     if(queue == null || queue == "") queue = wiq;
     client.onConnected = onConnected;
