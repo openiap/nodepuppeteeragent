@@ -1,33 +1,35 @@
 {
-  "name": "nodepuppeteeragent",
-  "version": "0.0.1",
-  "description": "",
-  "main": "main.js",
-  "keywords": [],
-  "scripts": {
-    "updateapidev": "npm uninstall @openiap/nodeapi && npm i openiap/nodeapi",
-    "updateapi": "npm uninstall @openiap/nodeapi && npm i @openiap/nodeapi"
-  },
-  "openiap": {
-    "daemon": true,
-    "chromium": true
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/openiap/nodepuppeteeragent.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "author": "OpenIAP ApS / Allan Zimmermann",
-  "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://community.openiap.io/"
-  },
-  "homepage": "https://github.com/openiap/nodepuppeteeragent",
-  "funding": "https://github.com/sponsors/skadefro",
-  "dependencies": {
-    "@openiap/nodeapi": "github:openiap/nodeapi",
-    "puppeteer": "^19.6.3"
-  }
+    "name": "nodepuppeteeragent",
+    "version": "0.0.1",
+    "description": "",
+    "main": "main.js",
+    "keywords": [],
+    "scripts": {
+        "updateapidev": "npm uninstall @openiap/nodeapi && npm i openiap/nodeapi",
+        "updateapi": "npm uninstall @openiap/nodeapi && npm i @openiap/nodeapi"
+    },
+    "openiap": {
+        "daemon": true,
+        "chromium": true,
+        "language": "nodejs",
+        "typescript": false
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/openiap/nodepuppeteeragent.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": "OpenIAP ApS / Allan Zimmermann",
+    "license": "MPL-2.0",
+    "bugs": {
+        "url": "https://community.openiap.io/"
+    },
+    "homepage": "https://github.com/openiap/nodepuppeteeragent",
+    "funding": "https://github.com/sponsors/skadefro",
+    "dependencies": {
+        "@openiap/nodeapi": "github:openiap/nodeapi",
+        "puppeteer": "^19.6.3"
+    }
 }
