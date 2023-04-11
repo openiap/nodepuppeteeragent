@@ -29,7 +29,7 @@
     "homepage": "https://github.com/openiap/nodepuppeteeragent",
     "funding": "https://github.com/sponsors/skadefro",
     "dependencies": {
-        "@openiap/nodeapi": "github:openiap/nodeapi",
+        "@openiap/nodeapi": "^0.0.12",
         "puppeteer": "^19.6.3"
     }
 }
