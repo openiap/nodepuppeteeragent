@@ -1,6 +1,6 @@
 {
     "name": "nodepuppeteeragent",
-    "version": "0.0.1",
+    "version": "0.0.11",
     "description": "",
     "main": "main.js",
     "keywords": [],
@@ -29,7 +29,7 @@
     "homepage": "https://github.com/openiap/nodepuppeteeragent",
     "funding": "https://github.com/sponsors/skadefro",
     "dependencies": {
-        "@openiap/nodeapi": "^0.0.12",
-        "puppeteer": "^19.6.3"
+        "@openiap/nodeapi": "^0.0.37",
+        "puppeteer": "^22.0.0"
     }
 }
